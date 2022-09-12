@@ -1,9 +1,7 @@
-import type { NextPage } from 'next';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
-import { Hero } from '../components/Hero';
 
-const Home: NextPage = () => {
+export const MyThemeToggle = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -17,10 +15,11 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Hero />
-      <p className="p-1 text-3xl">Home Page</p>
+      <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+        <option value="system">System</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
     </>
   );
 };
-
-export default Home;
