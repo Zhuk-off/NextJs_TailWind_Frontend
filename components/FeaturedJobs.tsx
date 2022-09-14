@@ -112,7 +112,7 @@ export const FeaturedJobs = () => {
             <SwiperSlide key={i}>
               <Link href="/#">
                 <a className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-150 hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-700">
-                  <div className="relative block overflow-hidden  pt-[70%]">
+                  <div className="relative block overflow-hidden pt-[70%]">
                     <Image
                       src={item.image}
                       alt={item.companyName}
