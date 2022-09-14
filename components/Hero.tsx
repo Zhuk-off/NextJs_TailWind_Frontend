@@ -2,6 +2,7 @@ import { Transition } from '@headlessui/react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { Button, IconButton } from './Button';
+import corparatePic from '../public/corparate.jpg'
 
 export const Hero = () => {
   return (
@@ -11,7 +12,7 @@ export const Hero = () => {
     sm:h-[450px] md:h-[450px]"
       >
         <Image
-          src="/../public/corparate.jpg"
+          src={corparatePic}
           layout="fill"
           alt="corparate"
           objectFit="cover"

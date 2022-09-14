@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { FeaturedJobs } from '../components/FeaturedJobs';
 import { Hero } from '../components/Hero';
 
 const Home: NextPage = () => {
@@ -18,7 +19,13 @@ const Home: NextPage = () => {
   return (
     <>
       <Hero />
-      <p className="p-1 text-3xl">Home Page</p>
+      <main className="mx-auto max-w-screen-xl px-6 sm:px-8">
+        <div className="mt-16 space-y-20">
+          <FeaturedJobs />
+        </div>
+      </main>
+
+      <footer className="mt-40">footer</footer>
     </>
   );
 };
