@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { FeaturedJobs } from '../components/FeaturedJobs';
+import { Footer } from '../components/Footer';
 import { Hero } from '../components/Hero';
 import { TopCompanies } from '../components/TopCompanies';
 
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer className="mt-40">footer</footer>
+     <Footer/>
     </>
   );
 };
